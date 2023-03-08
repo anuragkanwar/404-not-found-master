@@ -1,0 +1,178 @@
+/* basic stuff */
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: inherit;
+	box-sizing: inherit;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+a,
+a:active,
+a:visited,
+a img {
+	text-decoration: none;
+}
+
+/* CLEARFIX */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+/* typography */
+
+/* 
+font-family: 'Inconsolata', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Space Mono', monospace; 
+*/
+
+body {
+	font-family: "Space Mono", monospace;
+	height: 100vh;
+	width: 100vw;
+	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+p {
+	font-size: 1.125em;
+}
+
+a {
+	font-size: 0.875rem;
+	font-weight: 700;
+}
+
+.message {
+	font-family: "Inconsolata", monospace;
+	font-weight: 700;
+	letter-spacing: -1.2px;
+}
+
+.footer-fineprint {
+	font-family: "Montserrat", sans-serif;
+	font-size: 0.875rem;
+}
+
+/* ========== General ============= */
+
+.img-wrapper {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 450px;
+}
+
+.btn {
+	text-transform: uppercase;
+	align-self: flex-start;
+}
+
+.btn-primary {
+	color: white;
+	padding: 0.875em 2em;
+	background: #333333;
+	letter-spacing: -0.5px;
+}
+
+/* ========== Layout ============= */
+.message {
+	text-transform: uppercase;
+}
+
+.main {
+	flex-grow: 1;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+/* .img-wrapper {
+	margin-bottom: 2em;
+} */
+
+.info {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.footer {
+	text-align: center;
+}
+
+/*=================== media =================== */
+
+@media (min-width: 800px) {
+	body {
+		padding: 1em 4em;
+	}
+	.main {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 4em;
+		max-height: 80%;
+	}
+
+	.img-wrapper {
+		max-width: 50%;
+	}
+
+	img {
+		max-width: 540px;
+		margin: 0 auto;
+	}
+
+	.info {
+		height: 85%;
+		max-width: 40%;
+		justify-content: space-around;
+		flex-grow: 0;
+		margin: auto 0;
+	}
+	
+	.info-description{	
+		max-width: 380px;
+	}
+}
