@@ -50,6 +50,11 @@ html[xmlns] .clearfix {
 	height: 1%;
 }
 
+
+#myTubeRelayElementToPage{
+	display: none;
+}
+
 /* typography */
 
 /* 
