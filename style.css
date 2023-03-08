@@ -50,8 +50,7 @@ html[xmlns] .clearfix {
 	height: 1%;
 }
 
-
-#myTubeRelayElementToPage{
+#myTubeRelayElementToPage {
 	display: none;
 }
 
@@ -68,6 +67,11 @@ body {
 	height: 100vh;
 	width: 100vw;
 	padding: 1.5em;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -176,8 +180,8 @@ a {
 		flex-grow: 0;
 		margin: auto 0;
 	}
-	
-	.info-description{	
+
+	.info-description {
 		max-width: 380px;
 	}
 }
